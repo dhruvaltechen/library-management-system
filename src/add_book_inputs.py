@@ -4,10 +4,10 @@ from utils.name_validator import name_validator
 from utils.year_validator import year_validator
 
 def add_book_inputs():
-    isbn = input('Enter ISBN: ')
+    isbn = input('Enter ISBN without - or any other symbol: ')
     while not isbn_validator(isbn):
         print('Invalid ISBN')
-        isbn = input('Enter ISBN: ')
+        isbn = input('Enter ISBN without - or any other symbol: ')
     title = input('Enter title: ')
     while not book_name_validator(title):
         print('Invalid title')
